@@ -1,0 +1,425 @@
+
+
+// skills, about, portfolio, home, contact
+$border-speed:700ms;
+$button-border-style: double;
+$button-border-size: 4px;
+$button-main-color: lighten(#CBD0D8,5%);
+$button-secondary-color: #333D51;
+$button-third-color: lighten($button-secondary-color,8%);
+
+.button1 {
+	width: 0;
+	height: 0;
+	border-top: 120px solid transparent;
+    border-right: 220px solid $button-main-color;
+    border-bottom:140px solid transparent;
+    position: absolute;
+    transform: rotate(180deg);
+    transition: all 0.7s ease;
+    left: -180px;
+    top: 100px;
+    @include desktop {
+
+        left: -12%;
+        top: -1%;
+    }
+    &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 120px solid transparent;
+        border-right: 230px solid $button-third-color;
+        border-bottom:100px solid transparent;
+        transform: rotate(5deg);
+        position: absolute;
+        left: -90px;
+        bottom: -90px;
+        z-index: -9;
+        transition: all 0.7s ease;
+    }
+    .btn-text {
+        font-family: 'Exo', sans-serif;
+        color: $button-main-color;
+        position: absolute;
+        font-size: 30px;
+        font-weight: 400;
+        top: -40px;
+        left: -46px;
+        transform: rotate(180deg);
+        text-decoration: none;
+        @include desktop {
+            font-size: 36px;
+            font-weight: 500;
+            top: -44px;
+            left: -45px;
+        }
+    }
+}
+
+.button1:hover {
+    cursor: pointer;
+    transform: translate(50%,10%) rotate(-180deg);
+    transition: 1s;
+    &::after {
+        opacity: 0;
+        transform: translate(50%,0%);
+    }
+    .btn-text {
+        color: $button-secondary-color;
+        transform: translate(100%,50%) rotate(180deg);
+        transition: 1s;
+    }
+    .border1 {
+        width:0px;
+        height:1px;
+        background: transparent;
+        position: absolute;
+        top: -117px;
+        left: 215px;
+        border-left: $button-border-size $button-border-style $button-third-color;
+        animation: button1-border1 $border-speed 1 forwards ease-out;
+        }
+        .border2 {
+            width:0px;
+            height:0px;
+            background: transparent;
+            position: absolute;
+            top: 6px;
+            border-right: $button-border-size $button-border-style $button-third-color;
+            animation: button1-border2 $border-speed 1 forwards ease-out;
+            animation-delay: 400ms;
+        }
+        .border3 {
+            width:0px;
+            height:0px;
+            background: transparent;
+            position: absolute;
+            top: -120px;
+            border-right: $button-border-size $button-border-style $button-third-color;
+            animation: button1-border3 $border-speed 1 forwards ease-out;
+            animation-delay: 800ms;
+        }
+}
+
+
+@keyframes button1-border1 {
+    0% {height:0px; transform: rotate(74deg)}
+    100% {height: 257px; transform: rotate(0deg)}
+}
+
+@keyframes button1-border2 {
+    0% {height:0px; left: 166px; transform: rotate(204deg) translate(-50%, -50%);}
+    100% {height: 255px; left: 215px; transform: rotate(302.5deg) translate(-50%, -51%);}
+}
+
+@keyframes button1-border3 {
+    0% {height:0px; left: 0px; transform: rotate(126deg) translate(-50%, -50%);}
+    100% {height: 245px; left: 2px; transform: rotate(61.5deg) translate(-55%, -48%);}
+}
+//SKILLS
+.button2 {
+	width: 0;
+	height: 0;
+	border-top: 120px solid transparent;
+    border-right: 220px solid $button-main-color;
+    border-bottom:140px solid transparent;
+    transform: rotate(180deg);
+    transition: all 0.7s ease;
+    position: absolute;
+    left: -165px;
+    top: 280px;
+    @include desktop {
+        left: -10%;
+        top: 150px;
+    }
+    &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 120px solid transparent;
+        border-right: 230px solid $button-third-color;
+        border-bottom:100px solid transparent;
+        transform: rotate(5deg);
+        position: absolute;
+        left: -90px;
+        bottom: -90px;
+        z-index: -9;
+        transition: all 0.7s ease;
+    }
+    .btn-text {
+        font-family: 'Exo', sans-serif;
+        color: $button-main-color;
+        position: absolute;
+        font-size: 32px;
+        font-weight: 400;
+        top: -40px;
+        left: -45px;
+        transform: rotate(180deg);
+        text-decoration: none;
+        @include desktop {
+            font-size: 42px;
+            font-weight: 500;
+            top: -44px;
+        }
+    }
+}
+
+.button2:hover {
+    cursor: pointer;
+    transform: translate(50%,10%) rotate(-180deg);
+    transition: 1s;
+    &::after {
+        opacity: 0;
+        transform: translate(50%,0%);
+    }
+    .btn-text {
+        color: $button-secondary-color;
+        transform: translate(80%,40%) rotate(180deg);
+        transition: 1s;
+    }
+    .border1 {
+        width:0px;
+        height:1px;
+        background: transparent;
+        position: absolute;
+        top: -117px;
+        left: 215px;
+        border-left: $button-border-size $button-border-style $button-third-color;
+        animation: button2-border1 $border-speed 1 forwards ease-out;
+        }
+        .border2 {
+            width:0px;
+            height:0px;
+            background: transparent;
+            position: absolute;
+            top: 6px;
+            border-right: $button-border-size $button-border-style $button-third-color;
+            animation: button2-border2 $border-speed 1 forwards ease-out;
+            animation-delay: 400ms;
+        }
+        .border3 {
+            width:0px;
+            height:0px;
+            background: transparent;
+            position: absolute;
+            top: -120px;
+            border-right: $button-border-size $button-border-style $button-third-color;
+            animation: button2-border3 $border-speed 1 forwards ease-out;
+            animation-delay: 800ms;
+        }
+}
+
+
+@keyframes button2-border1 {
+    0% {height:0px; transform: rotate(74deg)}
+    100% {height: 257px; transform: rotate(0deg)}
+}
+
+@keyframes button2-border2 {
+    0% {height:0px; left: 166px; transform: rotate(204deg) translate(-50%, -50%);}
+    100% {height: 255px; left: 215px; transform: rotate(302.5deg) translate(-50%, -51%);}
+}
+
+@keyframes button2-border3 {
+    0% {height:0px; left: 0px; transform: rotate(126deg) translate(-50%, -50%);}
+    100% {height: 245px; left: 3px; transform: rotate(61.5deg) translate(-50%, -48%);}
+}
+
+// CONTACT
+
+.button4 {
+	width: 0;
+	height: 0;
+	border-top: 120px solid transparent;
+    border-right: 220px solid $button-main-color;
+    border-bottom:140px solid transparent;
+    transform: rotate(180deg);
+    transition: all 0.7s ease;
+    position: absolute;
+    left: -133px;
+    top: 470px;
+    @include desktop {
+        left: -90px;
+        top: 390px;
+    }
+    &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 120px solid transparent;
+        border-right: 230px solid $button-third-color;
+        border-bottom:100px solid transparent;
+        transform: rotate(5deg);
+        position: absolute;
+        left: -90px;
+        bottom: -90px;
+        z-index: -9;
+        transition: all 0.7s ease;
+        @include desktop {
+            left: -80px;
+            bottom: -140px;
+        }
+    }
+    
+    .btn-text {
+        font-family: 'Exo', sans-serif;
+        color: $button-main-color;
+        position: absolute;
+        font-size: 30px;
+        font-weight: 400;
+        top: -38px;
+        left: -44px;
+        transform: rotate(180deg);
+        text-decoration: none;
+        @include desktop {
+            font-size: 40px;
+            font-weight: 500;
+            left: -40px;
+            top: 5px;
+        }
+    }
+}
+
+.button4:hover {
+    cursor: pointer;
+    transform: translate(39%,10%) rotate(-180deg);
+    transition: 1s;
+    &::after {
+        opacity: 0;
+        transform: translate(50%,0%);
+    }
+    .btn-text {
+        color: $button-secondary-color;
+        transform: translate(52%,30%) rotate(180deg);
+        transition: 1s;
+        @include desktop {
+            color: $button-secondary-color;
+            transform: translate(52%,-50%) rotate(180deg);
+            transition: 1s;
+        }
+    }
+    .border1 {
+        width:0px;
+        height:1px;
+        background: transparent;
+        position: absolute;
+        top: -117px;
+        left: 215px;
+        border-left: $button-border-size $button-border-style $button-third-color;
+        animation: button4-border1 $border-speed 1 forwards ease-out;
+        }
+        .border2 {
+            width:0px;
+            height:0px;
+            background: transparent;
+            position: absolute;
+            top: 6px;
+            border-right: $button-border-size $button-border-style $button-third-color;
+            animation: button4-border2 $border-speed 1 forwards ease-out;
+            animation-delay: 400ms;
+        }
+        .border3 {
+            width:0px;
+            height:0px;
+            background: transparent;
+            position: absolute;
+            top: -120px;
+            border-right: $button-border-size $button-border-style $button-third-color;
+            animation: button4-border3 $border-speed 1 forwards ease-out;
+            animation-delay: 800ms;
+        }
+}
+
+
+// @keyframes button4-border1 {
+//     0% {height:0px; transform: rotate(74deg)}
+//     100% {height: 257px; transform: rotate(0deg)}
+// }
+
+@keyframes button4-border2 {
+    0% {height:0px; left: 166px; transform: rotate(204deg) translate(-50%, -50%);}
+    100% {height: 255px; left: 215px; transform: rotate(302.5deg) translate(-50%, -51%);}
+}
+
+@keyframes button4-border3 {
+    0% {height:0px; left: 0px; transform: rotate(126deg) translate(-50%, -50%);}
+    100% {height: 245px; left: 3px; transform: rotate(61.5deg) translate(-50%, -48%);}
+}
+
+//PORTFOLIO BUTTON
+
+
+
+.button3 {
+    transition: all 0.7s ease;
+    position: absolute;
+    right: -45%;
+    top: 20px;
+    // @include tablet-large {
+    //     right: -15%;
+    // }
+    @include desktop{
+    right: 13%;
+    }
+    .btn-text {
+        font-family: 'Exo', sans-serif;
+        color: darken($button-secondary-color,50%);
+        position: absolute;
+        font-size: 20px;
+        text-decoration: none;
+        @include tablet-large {
+            font-size: 36px;
+            color: darken($button-main-color,6%);
+        }
+        @include desktop{
+            font-size: 30px;
+            color: $button-main-color;
+            }
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        transform: translate(85%);
+        animation: unhide 16s forwards;
+        animation-delay: 10s;
+        @include tablet-large {
+            width: 200px;
+            height: 200px;
+        }
+        @include desktop{
+            width: 150px;
+            height: 150px;
+            transform: translate(85%);
+            animation: unhide 16s forwards;
+            animation-delay: 10s;
+            }
+    }
+}
+
+
+@keyframes unhide {
+    0% {transform: translate(85%) rotate(0deg)}
+    10%{transform: translate(75%) rotate(-15deg)}
+    15% {transform: translate(110%) rotate(0deg)}
+    20% {transform: translate(110%) rotate(0deg)}
+    25% {transform: translate(100%) rotate(-15deg)}
+    30% {transform: translate(85%) rotate(0deg)}
+    35%{transform: translate(75%) rotate(-15deg)}
+    40% {transform: translate(110%) rotate(0deg)}
+    45% {transform: translate(110%) rotate(0deg)}
+    50% {transform: translate(100%) rotate(-15deg)}
+    55% {transform: translate(100%) rotate(-15deg)}
+    60% {transform: translate(100%) rotate(-15deg)}
+    65% {transform: translate(65%) rotate(0deg)}
+    70% {transform: translate(65%) rotate(0deg)}
+    75% {transform: translate(65%) rotate(0deg)}
+    80% {transform: translate(90%) rotate(0deg)}
+    85% {transform: translate(90%) rotate(0deg)}
+    90% {transform: translate(90%) rotate(0deg)}
+    95% {transform: translate(0%) rotate(0deg)}
+    96% {transform: translate(0%) rotate(0deg)}
+    99% {transform: translate(0%) rotate(0deg)}
+    100% {transform: translate(0%) rotate(0deg)}
+}

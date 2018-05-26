@@ -1,0 +1,77 @@
+
+
+
+$form-main: #333D51;
+$form-secondary: #CBD0D8;
+$form-third: #D3AC2B ;
+// F4F3EA third color
+
+form {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    @include tablet-large {
+        left: 40%;
+        }
+    @include desktop {
+        top: 100px;
+        left: 35%;   
+    }
+    &.active {
+        transform: translate(-5%, 220%);
+        transition: all 1s;
+        // top: 200px; 
+        @include tablet-large {
+            transform: translate(-13%, 35%);
+            transition: all 1s; 
+            top: 180px; 
+            }
+        @include desktop {
+            transform: translate(-13%);
+            transition: all 1s; 
+            top: 180px; 
+        }
+    }
+    label {
+            font-family: 'Exo', sans-serif;
+            font-size: 20px;
+            color: $form-main;  
+            @include tablet-large {
+                font-size: 32px;
+                }
+                @include desktop {
+                    font-size: 20px;
+                }         
+    .about-input {
+            // position: absolute;
+            font-family: 'Exo', sans-serif;
+            font-size: 20px;
+            color: $form-third;
+            border: $form-third;
+            width: 400px;
+            padding: 15px 20px;
+            opacity: .7;
+            margin-top: 10px;
+            @include tablet-large {
+                font-size: 32px;
+            }
+            @include desktop {
+                font-size: 20px;
+            }
+        }
+    }
+    .about-submit {
+        font-family: 'Exo', sans-serif;
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        background: $form-main;
+        border: 1px double $form-third;
+        color: $form-secondary;
+        padding: 20px 40px;
+        @include desktop {
+            padding: 10px 20px;
+            bottom: -50px;
+        }
+    }
+}

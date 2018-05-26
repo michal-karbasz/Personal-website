@@ -1,0 +1,17 @@
+@mixin tablet-large {
+    @media (min-width: 768px) {
+        @content;        
+    }
+}
+@mixin desktop {
+    @media (min-width: 1025px) {
+        @content;        
+    }
+}
+
+@import 'partials/background';
+@import 'partials/buttons';
+@import 'partials/man';
+@import 'partials/about';
+@import 'partials/skills';
+@import 'partials/contact';

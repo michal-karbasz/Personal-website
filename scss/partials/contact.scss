@@ -1,0 +1,76 @@
+
+
+
+
+
+$form-main: #333D51;
+$form-secondary: #CBD0D8;
+$form-third: #D3AC2B ;
+// F4F3EA third color
+
+.form-contact {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    top: 30%;
+    left: 55%;
+    @include tablet-large {
+        left: 40%;
+        }
+    @include desktop {
+        top: -100px;
+        left: 45%;   
+    }
+    h3 {
+        font-family: 'Exo', sans-serif;
+        font-size: 24px;  
+        font-weight: 500;
+        color: $form-main;
+    }
+    .contactInput {
+            font-family: 'Exo', sans-serif;
+            font-size: 20px;
+            color: $form-main;  
+            padding: 8px;
+            margin-top: 5px;
+            border: none;
+            @include tablet-large {
+                font-size: 32px;
+                }
+                @include desktop {
+                    font-size: 20px;
+                }  
+            }       
+    .contactArea {
+        font-family: 'Exo', sans-serif;
+        font-size: 20px;
+        color: $form-main;  
+        padding: 20px;
+        border: none;
+        margin-top: 10px;
+        min-width: 400px;
+        @include tablet-large {
+            font-size: 32px;
+            }
+            @include desktop {
+                font-size: 18px;
+                padding: 20px, 20px;
+            }       
+        }
+    
+    .contactSubmit {
+        font-family: 'Exo', sans-serif;
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        background: $form-main;
+        border: 1px double $form-third;
+        color: $form-secondary;
+        padding: 10px 20px;
+        width: 100px;
+        @include desktop {
+            bottom: -50px;
+        }
+    }
+}

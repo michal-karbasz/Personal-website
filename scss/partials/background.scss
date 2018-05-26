@@ -1,0 +1,64 @@
+
+
+// css image variables
+
+$mainBackground: #333D51;
+$secondaryBackground: #CBD0D8;
+$thirdBackground: #D3AC2B ;
+// F4F3EA third color
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+}
+
+body {
+    background-color: $mainBackground;
+    background-image: url('../img/background1.png');
+    font-family: 'Exo', sans-serif;
+    overflow: hidden;
+    @include desktop {
+        background-image: url('../img/background2.png');
+        max-width: 1200px;
+    }
+}
+
+.background {
+    background-image: url('../img/background1.png');
+    background-repeat: no-repeat;
+    z-index: -1;
+    // float: left;
+    @include desktop {
+        position: relative;
+        transform: translate(-50%, 0) rotate(45deg);
+        top: -150px;
+        left: 70px;
+        width: 700px;
+        height: 700px;
+        margin-left: 50%;
+        float: left;
+        border: 3px double $secondaryBackground;
+    }
+}
+
+.background:hover {
+    border: 3px double $thirdBackground;
+}
+
+// .background::before {
+//     content: '';
+//     width: 300px;
+//     height: 600px;
+//     background: $secondaryBackground;
+//     // background-image: url('../img/background2.png');
+//     border: 1px solid black;
+//     z-index: -1;
+//     position: relative;
+//     bottom: -230px;
+//     left:-302px;
+//     z-index: 1;
+//     float: left;
+//     // opacity: 0.8;
+// }
