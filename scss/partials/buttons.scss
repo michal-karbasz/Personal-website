@@ -18,7 +18,7 @@ $button-third-color: lighten($button-secondary-color,8%);
     transform: rotate(180deg);
     transition: all 0.7s ease;
     left: -180px;
-    top: 100px;
+    top: 80px;
     @include desktop {
 
         left: -12%;
@@ -33,7 +33,7 @@ $button-third-color: lighten($button-secondary-color,8%);
         border-bottom:100px solid transparent;
         transform: rotate(5deg);
         position: absolute;
-        left: -90px;
+        left: -120px;
         bottom: -90px;
         z-index: -9;
         transition: all 0.7s ease;
@@ -52,7 +52,7 @@ $button-third-color: lighten($button-secondary-color,8%);
             font-size: 36px;
             font-weight: 500;
             top: -44px;
-            left: -45px;
+            left: -65px;
         }
     }
 }
@@ -67,7 +67,7 @@ $button-third-color: lighten($button-secondary-color,8%);
     }
     .btn-text {
         color: $button-secondary-color;
-        transform: translate(100%,50%) rotate(180deg);
+        transform: translate(110%,50%) rotate(180deg);
         transition: 1s;
     }
     .border1 {
@@ -131,7 +131,7 @@ $button-third-color: lighten($button-secondary-color,8%);
     top: 280px;
     @include desktop {
         left: -10%;
-        top: 150px;
+        top: 190px;
     }
     &::after {
         content: '';
@@ -142,7 +142,7 @@ $button-third-color: lighten($button-secondary-color,8%);
         border-bottom:100px solid transparent;
         transform: rotate(5deg);
         position: absolute;
-        left: -90px;
+        left: -110px;
         bottom: -90px;
         z-index: -9;
         transition: all 0.7s ease;
@@ -154,7 +154,7 @@ $button-third-color: lighten($button-secondary-color,8%);
         font-size: 32px;
         font-weight: 400;
         top: -40px;
-        left: -45px;
+        left: -65px;
         transform: rotate(180deg);
         text-decoration: none;
         @include desktop {
@@ -175,7 +175,7 @@ $button-third-color: lighten($button-secondary-color,8%);
     }
     .btn-text {
         color: $button-secondary-color;
-        transform: translate(80%,40%) rotate(180deg);
+        transform: translate(90%,40%) rotate(180deg);
         transition: 1s;
     }
     .border1 {
@@ -237,11 +237,11 @@ $button-third-color: lighten($button-secondary-color,8%);
     transform: rotate(180deg);
     transition: all 0.7s ease;
     position: absolute;
-    left: -133px;
+    left: -113px;
     top: 470px;
     @include desktop {
         left: -90px;
-        top: 390px;
+        top: 440px;
     }
     &::after {
         content: '';
@@ -257,8 +257,8 @@ $button-third-color: lighten($button-secondary-color,8%);
         z-index: -9;
         transition: all 0.7s ease;
         @include desktop {
-            left: -80px;
-            bottom: -140px;
+            left: -75px;
+            bottom: -110px;
         }
     }
     
@@ -268,7 +268,7 @@ $button-third-color: lighten($button-secondary-color,8%);
         position: absolute;
         font-size: 30px;
         font-weight: 400;
-        top: -38px;
+        top: -88px;
         left: -44px;
         transform: rotate(180deg);
         text-decoration: none;
@@ -276,7 +276,7 @@ $button-third-color: lighten($button-secondary-color,8%);
             font-size: 40px;
             font-weight: 500;
             left: -40px;
-            top: 5px;
+            top: -25px;
         }
     }
 }
@@ -287,7 +287,7 @@ $button-third-color: lighten($button-secondary-color,8%);
     transition: 1s;
     &::after {
         opacity: 0;
-        transform: translate(50%,0%);
+        transform: translate(40%,0%);
     }
     .btn-text {
         color: $button-secondary-color;
@@ -295,7 +295,7 @@ $button-third-color: lighten($button-secondary-color,8%);
         transition: 1s;
         @include desktop {
             color: $button-secondary-color;
-            transform: translate(52%,-50%) rotate(180deg);
+            transform: translate(48%,0%) rotate(180deg);
             transition: 1s;
         }
     }
