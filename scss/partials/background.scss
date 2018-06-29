@@ -13,7 +13,9 @@ $thirdBackground: #D3AC2B ;
     box-sizing: border-box;
     font-family: 'Exo', sans-serif;
 }
-
+.main-container {
+    max-width: 1200px;
+}
 body {
     background-color: $mainBackground;
     background-image: url('../img/background1.png');
@@ -22,6 +24,8 @@ body {
     @include desktop {
         background-image: url('../img/background2.png');
         max-width: 1200px;
+        background-repeat: repeat-x;
+
     }
 }
 
@@ -40,7 +44,7 @@ body {
         margin-left: 50%;
         float: left;
         border: 3px double $secondaryBackground;
-        max-width: 1200px;
+        // max-width: 1200px;
     }
 }
 
