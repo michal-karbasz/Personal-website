@@ -13,7 +13,7 @@ $thirdBackground: #D3AC2B ;
     box-sizing: border-box;
     font-family: 'Exo', sans-serif;
 }
-.main-container {
+html {
     max-width: 1200px;
 }
 body {
@@ -21,9 +21,10 @@ body {
     background-image: url('../img/background1.png');
     font-family: 'Exo', sans-serif;
     overflow: hidden;
+    display: flex;
     @include desktop {
         background-image: url('../img/background2.png');
-        max-width: 1200px;
+        max-width: 1300px;
         background-repeat: repeat-x;
 
     }
@@ -38,7 +39,7 @@ body {
         position: relative;
         transform: rotate(45deg);
         border-radius: 1%;
-        margin-left: 30%;
+        margin-left: 35%;
         width: 900px;
         height:900px;
         float: left;

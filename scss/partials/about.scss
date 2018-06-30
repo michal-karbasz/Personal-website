@@ -15,7 +15,7 @@ form {
         }
     @include desktop {
         top: 100px;
-        left: 35%;   
+        left: 37%;   
     }
     &.active {
         transform: translate(-5%, 220%);
@@ -70,8 +70,9 @@ form {
         color: $form-secondary;
         padding: 20px 40px;
         @include desktop {
-            padding: 10px 20px;
-            bottom: -50px;
+            padding: 15px 30px;
+            bottom: -60px;
+            font-size: 14px;
         }
     }
 }

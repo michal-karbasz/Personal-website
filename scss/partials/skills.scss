@@ -20,8 +20,8 @@
         top: 45%;
         }
     @include desktop {
-    top: -60px;
-    left: 40%;
+    top: 90px;
+    left: 68%;
     height: 380px;
     transform: translate(0%);
     }
@@ -57,7 +57,7 @@
             width: 150px;
             height: 150px;
             filter: grayscale(30%);
-            animation: fade-in-react 2s 1 forwards, rotate 300s infinite alternate forwards;
+            animation: fade-in-react 2s 1 forwards, rotate 100s infinite alternate forwards;
             animation-delay: 3.2s, 3.2s;
             transition: all 5s ease-in-out;
         }
@@ -67,7 +67,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         position: absolute;
-        bottom: -100px;
+        bottom: -120px;
         left: 0;
         height: 120px;
         .skills-to-develop{
@@ -101,7 +101,7 @@
             height: 96px;
             filter: grayscale(100%);
             margin-right: 30px;
-            margin-top:10px;
+            margin-top:30px;
             &:hover {
             filter: grayscale(0%);
             }
