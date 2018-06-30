@@ -57,6 +57,10 @@ $coatColor: #333D51;
         margin-left: 35%;
         margin-top: 5%;
     }
+    @include desktop-large {
+        margin-left: 35%;
+        margin-top: 5%;
+    }
     &.active{
         transform: translate(15%, 40%);
         transition: all 1s;

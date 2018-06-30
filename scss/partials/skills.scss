@@ -20,8 +20,8 @@
         top: 45%;
         }
     @include desktop {
-    top: 90px;
-    left: 68%;
+    top: 30px;
+    left: 64%;
     height: 380px;
     transform: translate(0%);
     }
@@ -49,7 +49,7 @@
         left: 100px;
         height: 150px;
         @include desktop {
-            top: 100px;
+            top: 90px;
             left: 380px;
             }
         .react{
@@ -60,6 +60,7 @@
             animation: fade-in-react 2s 1 forwards, rotate 100s infinite alternate forwards;
             animation-delay: 3.2s, 3.2s;
             transition: all 5s ease-in-out;
+            position: relative;
         }
     }
     .flex-container-below{
