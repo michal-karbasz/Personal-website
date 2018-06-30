@@ -19,8 +19,8 @@ $form-third: #D3AC2B ;
         left: 40%;
         }
     @include desktop {
-        top: -100px;
-        left: 45%;   
+        top: 30px;
+        left: 65%;   
     }
     h3 {
         font-family: 'Exo', sans-serif;
@@ -35,6 +35,7 @@ $form-third: #D3AC2B ;
             padding: 8px;
             margin-top: 5px;
             border: none;
+            min-width: 400px;
             @include tablet-large {
                 font-size: 32px;
                 }
@@ -46,10 +47,12 @@ $form-third: #D3AC2B ;
         font-family: 'Exo', sans-serif;
         font-size: 20px;
         color: $form-main;  
-        padding: 20px;
+        padding: 10px;
         border: none;
         margin-top: 10px;
         min-width: 400px;
+        max-width: 400px;
+        max-height: 300px;
         @include tablet-large {
             font-size: 32px;
             }

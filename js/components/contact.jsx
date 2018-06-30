@@ -47,15 +47,15 @@ to contact me on any subject:`,
                 <h3 style={{whiteSpace: 'pre'}}>{this.state.userMessage}</h3>
                 <br/>
                     <label> Name: <br/>
-                        <input className="contactInput" onChange={this.handleNameChange} value={this.state.nameVal} placeholder="Write your name"/>
+                        <input className="contactInput" onChange={this.handleNameChange} value={this.state.nameVal} placeholder="Write your name..."/>
                     </label>
                     <br/>
                     <label> Email: <br/>
-                        <input className="contactInput" type="email" onChange={this.handleEmailChange} value={this.state.email} placeholder="Your e-mail goes here" />
+                        <input className="contactInput" type="email" onChange={this.handleEmailChange} value={this.state.email} placeholder="Your e-mail goes here..." />
                     </label>
                     <br/>
                     <label> Message: <br/>
-                        <textarea className="contactArea" placeholder="Write your message here" onChange={this.handleMessageChange} value={this.state.message} />
+                        <textarea className="contactArea" placeholder="Write your message here..." onChange={this.handleMessageChange} value={this.state.message} />
                     </label>
                     <br/>
                         <input className="contactSubmit" type="submit" value="Send!" />
